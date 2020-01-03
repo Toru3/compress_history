@@ -3,14 +3,10 @@
 # https://hub.docker.com/r/library/rust/tags/
 image: "rust:latest"
 
-before_script:
-  - rustup component add rustfmt clippy
-  - rustup toolchain install beta
-  - rustup component add rustfmt clippy --toolchain beta
-
 .run_test: &run_test
   script:
-    - rustup --version && rustc --version && cargo --version
+    - rustup --version && rustup component add rustfmt clippy
+    - rustc --version && cargo --version
     - cargo fmt --all -- --check
     - cargo clippy
     - cargo build
