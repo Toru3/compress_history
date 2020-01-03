@@ -4,12 +4,24 @@
 image: "rust:latest"
 
 before_script:
+  - rustup toolchain install beta
   - rustup component add rustfmt
-#  - rustup component add clippy
+  - rustup component add rustfmt --toolchain beta
+  - rustup component add clippy
+  - rustup component add clippy --toolchain beta
 
 # Use cargo to test the project
-test:cargo:
+test:stable:
   script:
-    - rustup --version && rustc --version && cargo --version  # Print version info for debugging
+    - rustup --version && rustc --version && cargo --version
     - cargo fmt --all -- --check
+    - cargo clippy
+    - cargo test --all --verbose
+
+test:beta:
+  script:
+    - rustup default beta
+    - rustup --version && rustc --version && cargo --version
+    - cargo fmt --all -- --check
+    - cargo clippy
     - cargo test --all --verbose
