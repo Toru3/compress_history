@@ -1,5 +1,7 @@
 # compress_history
 [![Crate](https://img.shields.io/crates/v/compress_history.svg)](https://crates.io/crates/compress_history)
+[![pipeline status](https://gitlab.com/Toru3/compress_history/badges/master/pipeline.svg)](https://gitlab.com/Toru3/compress_history/commits/master)
+
 ## Example
 ```terminal
 $ cat history 
