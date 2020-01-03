@@ -16,3 +16,6 @@ FLAGS:
 OPTIONS:
     -f, --file <FILE>    Target history file [default: /home/tfukaya/.bash_history]
 ```
+
+## LICENSE
+MIT OR Apache-2.0
