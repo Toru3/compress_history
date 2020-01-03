@@ -1,4 +1,5 @@
 # compress_history
+![crates.io](https://img.shields.io/crates/v/compress_history.svg)
 ## Example
 ```terminal
 $ cat history 
