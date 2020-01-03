@@ -89,7 +89,7 @@ mod tests {
         assert!(!is_digits("fc"));
     }
     #[test]
-    fn split_command_test() {
+    fn split_command_test1() {
         let s =
             "cat file | grep -E hoge | cut -f1 | sed -e 's/old/new/g' | sort | uniq -c | sort -n";
         let v = vec![
@@ -101,6 +101,12 @@ mod tests {
             vec!["uniq", "-c"],
             vec!["sort", "-n"],
         ];
+        assert_eq!(split_command(s), v);
+    }
+    #[test]
+    fn split_command_test2() {
+        let s = "sort -rn <in >out 2>/dev/null";
+        let v = vec![vec!["sort", "-rn", "<in", ">out", "2>/dev/null"]];
         assert_eq!(split_command(s), v);
     }
 }
