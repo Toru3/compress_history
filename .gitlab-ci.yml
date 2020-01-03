@@ -25,5 +25,3 @@ test:beta:
     - cargo fmt --all -- --check
     - cargo clippy
     - cargo test --all --verbose
-    - rustc +beta --version && cargo +beta --version
-    - cargo +beta test --all --verbose
