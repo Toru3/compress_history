@@ -5,11 +5,9 @@ image: "rust:latest"
 
 .run_test: &run_test
   script:
-    - rustup --version && rustup component add rustfmt clippy
+    - rustup --version && rustup component add rustfmt
     - rustc --version && cargo --version
     - cargo fmt --all -- --check
-    - cargo clippy
-    - cargo build
     - cargo test --all --verbose
 
 # Use cargo to test the project
