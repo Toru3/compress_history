@@ -1,5 +1,5 @@
 # compress_history
-![crates.io](https://img.shields.io/crates/v/compress_history.svg)
+[![Crate](https://img.shields.io/crates/v/compress_history.svg)](https://crates.io/crates/compress_history)
 ## Example
 ```terminal
 $ cat history 
