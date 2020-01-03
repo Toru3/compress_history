@@ -31,7 +31,7 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -f, --file <FILE>    Target history file [default: /home/tfukaya/.bash_history]
+    -f, --file <FILE>    Target history file [default: /home/user/.bash_history]
 ```
 
 ## LICENSE
