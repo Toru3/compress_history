@@ -36,4 +36,4 @@ OPTIONS:
 ```
 
 ## LICENSE
-MIT OR Apache-2.0
+[MIT](LICENSE-MIT) OR [Apache-2.0](LICENSE-Apache-2.0)
