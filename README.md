@@ -1,8 +1,25 @@
 # compress_history
-
+## Example
 ```terminal
-$ ./target/debug/compress_history --help
-compress_history 0.1.0
+$ cat history 
+echo "hallo"
+echo "hello"
+ping 192.168.0.1
+ping 192.168.0.2
+ping 192.168.0.3
+ping 192.168.0.4
+ls -l
+ls -a
+$ compress_history -f history 
+echo "hello"
+ping 192.168.0.4
+ls -l
+ls -a
+```
+
+## Usage
+```terminal
+$ compress_history --help
 Toru3 <ryuutet@gmail.com>
 delete unnecessary history
 
