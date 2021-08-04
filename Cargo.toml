@@ -1,10 +1,10 @@
 [package]
 name = "compress_history"
-version = "0.1.5-alpha.0"
+version = "0.2.0"
 authors = ["Toru3 <ryuutet@gmail.com>"]
 edition = "2018"
 description = "delete unnecessary history"
-license = "MIT OR Apache-2.0"
+license = "AGPL-3.0-or-later"
 documentation = "https://docs.rs/compress_history/"
 homepage = "https://crates.io/crates/compress_history"
 repository = "https://gitlab.com/Toru3/compress_history"
@@ -16,6 +16,6 @@ categories = ["command-line-utilities", "command-line-interface"]
 
 [dependencies]
 clap = "2.33.0"
-directories = "2.0.2"
+directories = "3.0.2"
 log = "0.4.8"
-env_logger = "0.7.1"
+env_logger = "0.9.0"
